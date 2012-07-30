@@ -3,7 +3,7 @@ assimp:
     source: {md5sum: d5137302d8f00241ee10e623b97f9d22, uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/assimp/assimp-2.0.86-1.rdmanifest'}
   ubuntu:
     oneiric: 
-      source: {md5sum: 9de933f8f88bb506a527a361da58567d, uri: 'https://raw.github.com/Lopako/rosdistro/extras/extras/assimp-2.0.86-1.rdmanifest'}
+      source: {md5sum: 79e89d3f43fb10692a4994ca38a3042a, uri: 'https://github.com/Lopako/rosdistro/raw/extras/extras/assimp-2.0.86-1.rdmanifest'}
     precise: 
       apt:
         packages: [libassimp-dev]
