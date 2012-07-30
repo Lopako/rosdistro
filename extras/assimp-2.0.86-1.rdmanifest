@@ -1,5 +1,5 @@
-uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/assimp/assimp--2.0.863-sdk.tar'
-md5sum: e8a0f55af2fe604efa9d0623422b3291
+uri: 'https://github.com/downloads/Lopako/rosdistro/assimp--2.0.863-sdk.tar.gz'
+md5sum: 63683531517c3e69d7149f3a9d4db79e
 install-script: |
   #!/bin/bash
   set -o errexit
@@ -23,7 +23,7 @@ install-script: |
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr
     make
     sudo make install
-    sudo bash -c "echo e8a0f55af2fe604efa9d0623422b3291 > /usr/include/assimp/assimp-version.installed"
+    sudo bash -c "echo 63683531517c3e69d7149f3a9d4db79e > /usr/include/assimp/assimp-version.installed"
   else
     echo "Failed to install Assimp2"
     false
@@ -34,7 +34,7 @@ check-presence-script: |
   #!/bin/bash
   export PREFIX=/usr/
   if [ -f $PREFIX/include/assimp/assimp-version.installed ]; then
-    [ e8a0f55af2fe604efa9d0623422b3291 = `cat $PREFIX/include/assimp/assimp-version.installed` ]
+    [ 63683531517c3e69d7149f3a9d4db79e = `cat $PREFIX/include/assimp/assimp-version.installed` ]
   else
     false
   fi
